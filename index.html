@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Reporter</title>
+    <meta name="theme-color" content="#0d6efd">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="app-title">Issue Reporter</span>
+            </div>
+            <div class="top-bar-right">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+        
+        <div class="main-content" id="main-content">
+        </div>
+
+        <!-- Issue Post Images (hidden, referenced by JavaScript) -->
+        <div id="issue-images" style="display: none;">
+            <img id="pothole-img" src="pathhole.png" alt="Pothole">
+            <img id="streetlight-img" src="street light.png" alt="Broken Streetlight">
+            <img id="lost-pet-img" src="pet lost.png" alt="Lost Pet">
+            <img id="construction-dust-img" src="construction dust.png" alt="Construction Dust">
+            <img id="water-leakage-img" src="water leakge.png" alt="Water Leakage">
+            <img id="garbage-img" src="garbage.png" alt="Garbage">
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active" data-page="home">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item" data-page="search">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <a href="#" class="nav-item" data-page="post">
+                <i class="fas fa-plus-circle plus-icon"></i>
+            </a>
+            <a href="#" class="nav-item" data-page="chatbot">
+                <i class="fas fa-comment-dots"></i>
+                <span>Chatbot</span>
+            </a>
+            <a href="#" class="nav-item" data-page="profile">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
